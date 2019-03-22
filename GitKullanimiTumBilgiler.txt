@@ -1,8 +1,18 @@
-Başlangıç için deneme olarak yazıldı
 
-test
-
-localde bu dosya değiştirildi
-
-
-değiştiiiii
+		Git Bash Kullanımı
+		
+		Temel Bilgiler
+		
+		-> git --version		(Git'in kurulup kurulmadığını kontrol etmek için kullanılır)
+		
+		-> git config --global user.name "KullaniciAdi"		(Kullanıcı adını belirlemek için)
+		
+		-> git config --global user.email "email@email.com"		(Mail adresini belirlemek için)
+		
+		-> git config --global core.editor "uygulama.exe"		(Default editörü belirlemek için kullanılır ancak öncesinde .exe dosyasının path'ini çevresel değişkenlere eklemek gerekir)
+		
+		-> git config --global -l		(Tüm ayarları listelemek için)
+		
+		-> git init (Yerel repository başlatmak için)
+		
+		-> git clone (Uzak repository'yi kendi localine çekmek için)
