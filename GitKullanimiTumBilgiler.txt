@@ -55,7 +55,9 @@
 		
 		-> git checkout yeni_branch_adi 							(Branch'ler arasında geçiş için kullanılır.)
 		
-		-> git merge yeni_branch_adi 								(Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir.)
+		-> git merge yeni_branch_adi 								(Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir. Fast-Forward olarak birleştirir.)
+		
+		-> git merge yeni_branch_adi --no-ff 						(Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir. NON-Fast-Forward olarak birleştirir.)
 		
 		-> git stash 												(O anda projeyi kapatmamız gerekti ve yaptıklarımızın silinmesini istemiyoruz ancak commit'te etmek istemiyoruz. O durumlarda kullanılır.)
 		
