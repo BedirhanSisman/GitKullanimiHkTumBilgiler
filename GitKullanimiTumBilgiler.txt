@@ -48,4 +48,73 @@
 		
 		-> git branch (Branch'leri listeler. Aktif olanın başında yıldız vardır.)
 		
+		-> git branch -v (Branch'leri ekstra açıklamalar ile listeler.)
+		
+		-> git branch yeni_branch_adi (yeni_branch_adi adında branch oluşturur.)
+		
+		-> git checkout yeni_branch_adi (Branch'ler arasında geçiş için kullanılır.)
+		
+		-> git merge yeni_branch_adi (Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir.)
+		
+		-> git stash (O anda projeyi kapatmamız gerekti ve yaptıklarımızın silinmesini istemiyoruz ancak commit'te etmek istemiyoruz. O durumlarda kullanılır.)
+		
+		-> git stash list (Stash'lerin listesini verir.)
+		
+		-> git stash pop (Stash listesinde bulunan son stash'i geri getirir ve stash listesinden kaldırır.)
+		
+		-> git stash apply stash_ismi (İlgili stash'i stash listesinden silmeden geri getirir.)
+		
+		-> git stash drop stash_ismi (İlgili stash'i stash listesinden siler ve stash'i uygulamaz.)
+		
+		-> git checkout -b yeni_branch_adi (Yeni branch oluşturulur ve otomatik olarak yeni oluşturulan branch'e geçiş yapar.)
+		
+		-> git rebase master (O anda içinde bulunulan branch'in başlangıç zamanını master branch'in en son hali yapmaya yarar.)
+		
+		-> git rebase --abort (Conflict olduğunda rebase işlemini iptal etmek için kullanılır.)
+		
+		-> git mergetool dosya_adi (Conflict olan dosyanın çakışma durumlarını gösteren tool'u açar, oradan çözmeye çalışabiliriz.)
+		
+		-> git rebase --continue (Conflict çözüldükten sonra rebase işlemini devam ettirmeye yarar.)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
