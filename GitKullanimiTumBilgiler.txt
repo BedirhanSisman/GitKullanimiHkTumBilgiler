@@ -13,6 +13,39 @@
 		
 		-> git config --global -l		(Tüm ayarları listelemek için)
 		
-		-> git init (Yerel repository başlatmak için)
+		-> git init		(Yerel repository başlatmak için)
 		
-		-> git clone (Uzak repository'yi kendi localine çekmek için)
+		-> git clone		(Uzak repository'yi kendi localine çekmek için)
+		
+		-> pwd		(Git'in nerede olduğunu görmek için)
+		
+		-> cd		(Klasör değiştirmek için kullanılır)
+		
+		-> ls		(Listelemek için kullanılır)
+		
+		-> git init		(Takip edilmesini istediğin klasörün içine cd komutu ile girip kullanılır)
+		
+		-> git add dosya_adi		(İlgili dosya staging area'ya taşınır)
+		
+		-> git add .		(Klasörde ki herşey staging area'ya eklenir)
+		
+		-> git commit -m "Commit açıklaması"		(İlgili commit mesajı ile birlikte kaydedilir.)
+		
+		-> git commit -a -m "Commit açıklaması"		(İlgili commit mesajı ile birlikte staging areaya taşınmadan doğrudan kaydedilir.)
+		
+		-> git status		(O anki dosyanın git durumunu gösterir)
+		
+		-> git log		(O ana kadar branch üzerinde yapılan tüm commitleri listeler)
+		
+		-> git commit --amend -m "Yeni açıklama"		(Son commit'in açıklamasını değiştirir)
+
+		-> git checkout commit_id		(Gidilmek istenen commit'e geçirilir.)
+
+		-> git checkout branch_adi		(Gidilmek istenen branch'e geçirilir.)
+		
+		
+		Branching ve Merging
+		
+		-> git branch (Branch'leri listeler. Aktif olanın başında yıldız vardır.)
+		
+		
