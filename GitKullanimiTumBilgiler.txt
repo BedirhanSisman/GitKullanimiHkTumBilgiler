@@ -1,81 +1,99 @@
 
-		Git Bash Kullanımı
+													GIT BASH KULLANIMI
 		
-		Temel Bilgiler
 		
-		-> git --version		(Git'in kurulup kurulmadığını kontrol etmek için kullanılır)
+											-------- Temel Bilgiler --------
 		
-		-> git config --global user.name "KullaniciAdi"		(Kullanıcı adını belirlemek için)
+		-> git --version											(Git'in kurulup kurulmadığını kontrol etmek için kullanılır)
 		
-		-> git config --global user.email "email@email.com"		(Mail adresini belirlemek için)
+		-> git config --global user.name "KullaniciAdi"				(Kullanıcı adını belirlemek için)
 		
-		-> git config --global core.editor "uygulama.exe"		(Default editörü belirlemek için kullanılır ancak öncesinde .exe dosyasının path'ini çevresel değişkenlere eklemek gerekir)
+		-> git config --global user.email "email@email.com"			(Mail adresini belirlemek için)
 		
-		-> git config --global -l		(Tüm ayarları listelemek için)
+		-> git config --global core.editor "uygulama.exe"			(Default editörü belirlemek için kullanılır ancak öncesinde .exe dosyasının path'ini çevresel değişkenlere eklemek gerekir)
 		
-		-> git init		(Yerel repository başlatmak için)
+		-> git config --global -l									(Tüm ayarları listelemek için)
 		
-		-> git clone		(Uzak repository'yi kendi localine çekmek için)
+		-> git init													(Yerel repository başlatmak için)
 		
-		-> pwd		(Git'in nerede olduğunu görmek için)
+		-> git clone												(Uzak repository'yi kendi localine çekmek için)
 		
-		-> cd		(Klasör değiştirmek için kullanılır)
+		-> pwd														(Git'in nerede olduğunu görmek için)
 		
-		-> ls		(Listelemek için kullanılır)
+		-> cd														(Klasör değiştirmek için kullanılır)
 		
-		-> git init		(Takip edilmesini istediğin klasörün içine cd komutu ile girip kullanılır)
+		-> ls														(Listelemek için kullanılır)
 		
-		-> git add dosya_adi		(İlgili dosya staging area'ya taşınır)
+		-> git init													(Takip edilmesini istediğin klasörün içine cd komutu ile girip kullanılır)
 		
-		-> git add .		(Klasörde ki herşey staging area'ya eklenir)
+		-> git add dosya_adi										(İlgili dosya staging area'ya taşınır)
 		
-		-> git commit -m "Commit açıklaması"		(İlgili commit mesajı ile birlikte kaydedilir.)
+		-> git add .												(Klasörde ki herşey staging area'ya eklenir)
 		
-		-> git commit -a -m "Commit açıklaması"		(İlgili commit mesajı ile birlikte staging areaya taşınmadan doğrudan kaydedilir.)
+		-> git commit -m "Commit açıklaması"						(İlgili commit mesajı ile birlikte kaydedilir.)
 		
-		-> git status		(O anki dosyanın git durumunu gösterir)
+		-> git commit -a -m "Commit açıklaması"						(İlgili commit mesajı ile birlikte staging areaya taşınmadan doğrudan kaydedilir.)
 		
-		-> git log		(O ana kadar branch üzerinde yapılan tüm commitleri listeler)
+		-> git status												(O anki dosyanın git durumunu gösterir)
 		
-		-> git commit --amend -m "Yeni açıklama"		(Son commit'in açıklamasını değiştirir)
+		-> git log													(O ana kadar branch üzerinde yapılan tüm commitleri listeler)
+		
+		-> git commit --amend -m "Yeni açıklama"					(Son commit'in açıklamasını değiştirir)
 
-		-> git checkout commit_id		(Gidilmek istenen commit'e geçirilir.)
+		-> git checkout commit_id									(Gidilmek istenen commit'e geçirilir.)
 
-		-> git checkout branch_adi		(Gidilmek istenen branch'e geçirilir.)
+		-> git checkout branch_adi									(Gidilmek istenen branch'e geçirilir.)
 		
 		
-		Branching ve Merging
+											-------- Branching ve Merging --------
 		
-		-> git branch (Branch'leri listeler. Aktif olanın başında yıldız vardır.)
+		-> git branch 												(Branch'leri listeler. Aktif olanın başında yıldız vardır.)
 		
-		-> git branch -v (Branch'leri ekstra açıklamalar ile listeler.)
+		-> git branch -v 											(Branch'leri ekstra açıklamalar ile listeler.)
 		
-		-> git branch yeni_branch_adi (yeni_branch_adi adında branch oluşturur.)
+		-> git branch yeni_branch_adi 								(yeni_branch_adi adında branch oluşturur.)
 		
-		-> git checkout yeni_branch_adi (Branch'ler arasında geçiş için kullanılır.)
+		-> git checkout yeni_branch_adi 							(Branch'ler arasında geçiş için kullanılır.)
 		
-		-> git merge yeni_branch_adi (Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir.)
+		-> git merge yeni_branch_adi 								(Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir.)
 		
-		-> git stash (O anda projeyi kapatmamız gerekti ve yaptıklarımızın silinmesini istemiyoruz ancak commit'te etmek istemiyoruz. O durumlarda kullanılır.)
+		-> git stash 												(O anda projeyi kapatmamız gerekti ve yaptıklarımızın silinmesini istemiyoruz ancak commit'te etmek istemiyoruz. O durumlarda kullanılır.)
 		
-		-> git stash list (Stash'lerin listesini verir.)
+		-> git stash list 											(Stash'lerin listesini verir.)
 		
-		-> git stash pop (Stash listesinde bulunan son stash'i geri getirir ve stash listesinden kaldırır.)
+		-> git stash pop 											(Stash listesinde bulunan son stash'i geri getirir ve stash listesinden kaldırır.)
 		
-		-> git stash apply stash_ismi (İlgili stash'i stash listesinden silmeden geri getirir.)
+		-> git stash apply stash_ismi 								(İlgili stash'i stash listesinden silmeden geri getirir.)
 		
-		-> git stash drop stash_ismi (İlgili stash'i stash listesinden siler ve stash'i uygulamaz.)
+		-> git stash drop stash_ismi 								(İlgili stash'i stash listesinden siler ve stash'i uygulamaz.)
 		
-		-> git checkout -b yeni_branch_adi (Yeni branch oluşturulur ve otomatik olarak yeni oluşturulan branch'e geçiş yapar.)
+		-> git checkout -b yeni_branch_adi 							(Yeni branch oluşturulur ve otomatik olarak yeni oluşturulan branch'e geçiş yapar.)
 		
-		-> git rebase master (O anda içinde bulunulan branch'in başlangıç zamanını master branch'in en son hali yapmaya yarar.)
+		-> git rebase master 										(O anda içinde bulunulan branch'in başlangıç zamanını master branch'in en son hali yapmaya yarar.)
 		
-		-> git rebase --abort (Conflict olduğunda rebase işlemini iptal etmek için kullanılır.)
+		-> git rebase --abort 										(Conflict olduğunda rebase işlemini iptal etmek için kullanılır.)
 		
-		-> git mergetool dosya_adi (Conflict olan dosyanın çakışma durumlarını gösteren tool'u açar, oradan çözmeye çalışabiliriz.)
+		-> git mergetool dosya_adi 									(Conflict olan dosyanın çakışma durumlarını gösteren tool'u açar, oradan çözmeye çalışabiliriz.)
 		
-		-> git rebase --continue (Conflict çözüldükten sonra rebase işlemini devam ettirmeye yarar.)
+		-> git rebase --continue									(Conflict çözüldükten sonra rebase işlemini devam ettirmeye yarar.)
 		
+		
+											-------- Github Kullanımı -------- 
+
+		-> git clone github_proje_linki.git 						(Linkte bulunan projeyi locale indirir.)
+		
+		-> git remote -v 											(Projede bulunan diğer remote repoların listesini görebilmeyi sağlar. Github'dan çektiğimiz projenin default remote adı "origin"dir.)
+		
+		-> git push origin master 									(Github'da bulunan projenin (default origin) master branch'ine localde yaptığın değişiklikleri gönderir.)
+		
+		-> git push kopyalanan_proje_linki							(Github'da bulunan içi boş repo'ya bu komut satırı ile localde bulunan projeyi gönderebilirsin.)
+		
+		-> git remote add yeni_remote_adi kopyalanan_proje_linki	(Eğer yukarıda bulunan satır gibi uzun uzun kullanmak istemiyorsan bu satırı console'a yazdıktan sonra;)
+		
+		-> git push yeni_remote_adi									(Bu komut satırı ile basit şekilde gönderebilirsin. Bu şekilde remote repo tanımını yapmış oluyorsun aslında.)
+		
+		
+											-------- NOTLAR -------- 
 		
 		
 		
