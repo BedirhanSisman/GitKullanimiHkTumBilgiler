@@ -97,7 +97,16 @@
 		
 											-------- NOTLAR -------- 
 		
+		-> Görsel olarak farkları görmek ve değişiklikleri birleştirmek için kullanabileceğiniz bir uygulama olarak p4merge öneriliyor. Ücretsiz ve güzel bir araç. 
+		   Kurulum : google->p4merge download->perforce.com->download->yalnızca visual merge tool seçili olsun->kurulumu bitir next next.
+		   Bash arayüzünden kullanabilmek için yine .exe uzantılı dosyayı çevresel değişkenlere ekliyoruz. Sonra consol'a 'git config --global merge.tool p4merge' ve 'git config --global diff.tool p4merge' yazıyoruz.
+		   Kullanım için 'git difftool commit_id_1 commit_id_2'
 		
+		-> Çalışma dizininde bulunan bir dosyanın git sistemi tarafından değişikliklerinin algılanmasını istemiyorsak '.gitignore' dosyasını kullanırız.
+		
+		-> Sourcetree uygulamasından projenin dönüm noktaları olduğunu düşündüğümüz yerlere tag ekleyebiliriz.
+		
+		-> Github'da bulunan projeye push işlemi gerçekleştirebilecek kullanıcıların e-maillerini belirlemek için github.com/projem->settings->collaborators bu kısıma yetkinlik vermek istediğimiz kullanıcıların mail adreslerini ekleriz.
 		
 		
 		
