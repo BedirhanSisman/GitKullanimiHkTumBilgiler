@@ -55,9 +55,24 @@
 		
 		-> git checkout yeni_branch_adi 							(Branch'ler arasında geçiş için kullanılır.)
 		
+		-> git checkout -b yeni_branch_adi 							(Yeni branch oluşturulur ve otomatik olarak yeni oluşturulan branch'e geçiş yapar.)
+		
+		-> git branch -d branch_adi 								(İlgili branch'i siler.)
+		
 		-> git merge yeni_branch_adi 								(Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir. Fast-Forward olarak birleştirir.)
 		
 		-> git merge yeni_branch_adi --no-ff 						(Bulunduğun branch ile yeni_branch_adi branch'ini bulunduğun branch'te birleştirir. NON-Fast-Forward olarak birleştirir.)
+		
+		-> git rebase master 										(O anda içinde bulunulan branch'in başlangıç zamanını master branch'in en son hali yapmaya yarar.)
+		
+		-> git rebase --abort 										(Conflict olduğunda rebase işlemini iptal etmek için kullanılır.)
+		
+		-> git mergetool dosya_adi 									(Conflict olan dosyanın çakışma durumlarını gösteren tool'u açar, oradan çözmeye çalışabiliriz.)
+		
+		-> git rebase --continue									(Conflict çözüldükten sonra rebase işlemini devam ettirmeye yarar.)
+		
+		
+											-------- Stash Mantığı --------
 		
 		-> git stash 												(O anda projeyi kapatmamız gerekti ve yaptıklarımızın silinmesini istemiyoruz ancak commit'te etmek istemiyoruz. O durumlarda kullanılır.)
 		
@@ -68,16 +83,6 @@
 		-> git stash apply stash_ismi 								(İlgili stash'i stash listesinden silmeden geri getirir.)
 		
 		-> git stash drop stash_ismi 								(İlgili stash'i stash listesinden siler ve stash'i uygulamaz.)
-		
-		-> git checkout -b yeni_branch_adi 							(Yeni branch oluşturulur ve otomatik olarak yeni oluşturulan branch'e geçiş yapar.)
-		
-		-> git rebase master 										(O anda içinde bulunulan branch'in başlangıç zamanını master branch'in en son hali yapmaya yarar.)
-		
-		-> git rebase --abort 										(Conflict olduğunda rebase işlemini iptal etmek için kullanılır.)
-		
-		-> git mergetool dosya_adi 									(Conflict olan dosyanın çakışma durumlarını gösteren tool'u açar, oradan çözmeye çalışabiliriz.)
-		
-		-> git rebase --continue									(Conflict çözüldükten sonra rebase işlemini devam ettirmeye yarar.)
 		
 		
 											-------- Github Kullanımı -------- 
@@ -94,6 +99,8 @@
 		
 		-> git push yeni_remote_adi									(Bu komut satırı ile basit şekilde gönderebilirsin. Bu şekilde remote repo tanımını yapmış oluyorsun aslında.)
 		
+		-> git pull													(Bu komut remote repository'de bulunan değişiklikleri alır üzerinde çalıştığımız projeye ekler. Böylece projenin en güncel hali ile çalışmış oluruz.)
+		
 		
 											-------- NOTLAR -------- 
 		
@@ -109,41 +116,9 @@
 		-> Github'da bulunan projeye push işlemi gerçekleştirebilecek kullanıcıların e-maillerini belirlemek için github.com/projem->settings->collaborators bu kısıma yetkinlik vermek istediğimiz kullanıcıların mail adreslerini ekleriz.
 		
 		
+											-------- GIT ve GITHUB için Ücretsiz Yazılımlar -------- 
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		-> cmder portable console emulator. Sıkıcı command prompt'tan yada git bash'ten sıkıldıysan kullanabilirsin. Full versionunda git ile birlikte kurulmuş halde geliyor. 
+		   Kullanıcı dostu. Kurulum gerektirmez doğrudan .exe uzantılı dosyayı çalıştırarak kullanabilirsiniz.
+		   
+		-> GitHub Desktop Uygulaması. 
